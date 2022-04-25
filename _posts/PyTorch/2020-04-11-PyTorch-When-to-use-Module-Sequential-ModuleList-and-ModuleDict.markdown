@@ -6,6 +6,14 @@ categories: PyTorch
 permalink: /:categories/:title
 author: 'Mohammad Dehghan'
 ---
+* Do not remove this line (it will not be displayed) 
+{:toc}
+
+![my_pic]({{site.baseurl}}/assets/posts/densenet.png){: width="500" } 
+
+# Overview
+Are you aware of the thoughtful way in which deep and complex models like ResNet, ResNext, DenseNet, etc are implemented in PyTorch?
+In this blog post, I have attempted to categorize and describe how to use different modules effectively to build your custom model. Check it out, I'm sure it will help you. Your comments and suggestions about how it could be improved are also welcome.
 
 We'll look at how to use PyTorch's three primary building blocks: Module, Sequential, and ModuleList in this blog. We'll start with an example and improve it incrementally.
 
