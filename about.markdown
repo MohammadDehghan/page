@@ -15,7 +15,7 @@ td, th {
 
 > I'm a goal-oriented, self-motivated deep learning researcher working at the intersection of machine learning, computer vision, and medical image analysis. My ultimate goal in research is to imitate human intelligence and create intelligent algorithms to deal with real-world problems.
 
-Click [here](https://drive.google.com/file/d/14JYxTtUs5Snl5evPqdyi2zQza7TKo_bk/view?usp=sharing) to download my CV.
+Click [here](https://drive.google.com/file/d/1v38F6khArn2kxDtA9_rWbPX3WzQezmkw/view?usp=sharing) to download my CV.
 >
 
 

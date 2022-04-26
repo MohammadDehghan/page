@@ -6,14 +6,9 @@ categories: Transformers
 permalink: /:categories/:title
 author: 'Mohammad Dehghan'
 ---
-1. Overview
-  * Some notes from the paper
-2. PyTorch impelementation
-  * Patch embeddings
-  * Positional encodings with parameters
-  * MLP Classification Head
-  * Vision Transformer
 
+* Do not remove this line (it will not be displayed) 
+{:toc}
 
 ## Overview
 
@@ -23,7 +18,7 @@ Without any convolution layers, the Vision Transformer applies a pure transforme
 
 Because patch embeddings do not contain any information about where the patch came from, learned positional embeddings are added to the patch embeddings when feeding the transformer with patches. The positional embeddings, along with other parameters, are a set of vectors for each patch location..
 
-# Some notes from the paper
+## Some notes from the paper
 * ViTs that are pre-trained on large datasets perform well. A single linear layer should be used when fine-tuning a model trained with an MLP classification head. By using a ViT pretrained on 300 million images, the paper beats SOTA. 
 * While the patch size remains the same, they use higher resolution images during inference. In order to calculate positional embeddings for new patches, learning positional embeddings are interpolated.
 
