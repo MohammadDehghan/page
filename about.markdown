@@ -42,7 +42,7 @@ Email: m.dehghan9975@gmail.com
 
 <!-- [missing-modality]:https://arxiv.org/pdf/2203.06217.pdf -->
 
-<!-- [motor-imagery]:https://github.com/MohammadDehghan/Improving-Classification-of-Multi-class-Motor-Imagery-by-Statistical-Feature-Selection --> -->
+<!-- [motor-imagery]:https://github.com/MohammadDehghan/Improving-Classification-of-Multi-class-Motor-Imagery-by-Statistical-Feature-Selection --> 
 
 
 Please visit my website [here](https://sites.google.com/view/mohammad-dehghan/about)
