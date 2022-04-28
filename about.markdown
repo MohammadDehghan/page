@@ -45,4 +45,4 @@ Email: m.dehghan9975@gmail.com
 <!-- [motor-imagery]:https://github.com/MohammadDehghan/Improving-Classification-of-Multi-class-Motor-Imagery-by-Statistical-Feature-Selection --> 
 
 
-Please visit my website [here](https://sites.google.com/view/mohammad-dehghan/about)
+Please visit my website [here](https://sites.google.com/view/mohammad-dehghan/about).
