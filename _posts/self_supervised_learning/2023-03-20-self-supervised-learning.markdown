@@ -43,12 +43,12 @@ This tutorial explores self-supervised contrastive learning, a type of unsupervi
   <figcaption>Fig.1 - SimCLR framework.</figcaption>
 </figure> -->
 
-![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: width="500" }
-Fig.1 - SimCLR framework.
+<!-- ![Picture]({{site.baseurl}}/assets/posts/SimCLR_arch.png){: width="500" }
+Fig.1 - SimCLR framework. -->
 
 
-<!-- ![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: .center-image }Fig.1 - SimCLR framework. -->
-<!-- ![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: style="display: block; margin: 0 auto;" }Fig.1 - SimCLR framework. -->
+<!-- ![Picture]({{site.baseurl}}/assets/posts/SimCLR_arch.png){: .center-image }Fig.1 - SimCLR framework. -->
+![Picture]({{site.baseurl}}/assets/posts/SimCLR_arch.png){: style="display: block; margin: 0 auto;" }Fig.1 - SimCLR framework.
 
 The objective is to train a model on a dataset of unlabeled images to adapt quickly to any image recognition task. During training, a batch of images is sampled, and two versions of each image are created through data augmentation techniques. A CNN like ResNet is used to obtain a 1D feature vector on which a small MLP is applied. The output features of the augmented images are trained to be close, while all other images in the batch should be as different as possible. This trains the model to recognize the unchanged content of the image under augmentations, such as objects.
 
