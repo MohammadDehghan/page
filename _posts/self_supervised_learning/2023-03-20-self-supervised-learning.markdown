@@ -27,6 +27,7 @@ Examples of self-supervised learning include:
 * **Contrastive learning**: This technique trains a model to learn embeddings of input data such that semantically similar examples are mapped to nearby points in the embedding space, while dissimilar examples are mapped to distant points. The model is trained using pairs of augmented examples that are either from the same or different classes.
 * **Predictive coding**: This technique trains a model to predict future observations or features of the input data. The model is trained using a sequence of input data where each time step is encoded by the model and then decoded to reconstruct the original input. The reconstruction error is then used to train the model.
 * **Generative models**: This technique trains a model to generate new samples that are similar to the input data. The model is trained using the input data to learn a probability distribution over the data, and then generates new samples by sampling from this distribution.
+
 Self-supervised learning differs from other types of unsupervised learning in that it involves creating a supervisory signal or annotation from the input data itself, rather than relying on external labels or annotations. This makes it more efficient and scalable than traditional supervised learning, and allows for the use of much larger amounts of unlabeled data. In contrast, other types of unsupervised learning, such as clustering or dimensionality reduction, do not involve creating a supervisory signal or annotation, and instead focus on finding patterns or structure in the input data.
 
 
@@ -42,8 +43,8 @@ This tutorial explores self-supervised contrastive learning, a type of unsupervi
   <figcaption>Fig.1 - SimCLR framework.</figcaption>
 </figure> -->
 
-![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: .center-image }
-Fig.1 - SimCLR framework.
+![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: .center-image }Fig.1 - SimCLR framework.
+<!-- ![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: style="display: block; margin: 0 auto;" }Fig.1 - SimCLR framework. -->
 
 The objective is to train a model on a dataset of unlabeled images to adapt quickly to any image recognition task. During training, a batch of images is sampled, and two versions of each image are created through data augmentation techniques. A CNN like ResNet is used to obtain a 1D feature vector on which a small MLP is applied. The output features of the augmented images are trained to be close, while all other images in the batch should be as different as possible. This trains the model to recognize the unchanged content of the image under augmentations, such as objects.
 
