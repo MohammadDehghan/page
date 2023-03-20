@@ -33,14 +33,17 @@ Self-supervised learning differs from other types of unsupervised learning in th
 ## A case study: SimCLR
 This tutorial explores self-supervised contrastive learning, a type of unsupervised learning where input data is given without accompanying labels. Self-supervised learning methods aim to learn from the data alone, making it useful for quickly fine-tuning models for specific classification tasks. The benefit of self-supervised learning is the ability to obtain large datasets without manual labeling. Contrastive learning is a subfield of self-supervised learning that trains a model to cluster an image and its slightly augmented version in latent space while maximizing the distance to other images. SimCLR is a recent and straightforward method for contrastive learning. The overral framework has been depicted in Fig.1.
 
-<figure>
+<!-- <figure>
   <img src="{{site.baseurl}}/assets/posts/simCLR_arch.png" 
         alt="Picture" 
         width="500" 
         height="500" 
         style="display: block; margin: 0 auto" />
   <figcaption>Fig.1 - SimCLR framework.</figcaption>
-</figure>
+</figure> -->
+
+![Picture]({{site.baseurl}}/assets/posts/simCLR_arch.png){: .center-image }
+Fig.1 - SimCLR framework.
 
 The objective is to train a model on a dataset of unlabeled images to adapt quickly to any image recognition task. During training, a batch of images is sampled, and two versions of each image are created through data augmentation techniques. A CNN like ResNet is used to obtain a 1D feature vector on which a small MLP is applied. The output features of the augmented images are trained to be close, while all other images in the batch should be as different as possible. This trains the model to recognize the unchanged content of the image under augmentations, such as objects.
 
