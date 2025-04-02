@@ -55,3 +55,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Add this to ensure proper GitHub Pages deployment
+permalink: /:year/:month/:day/:title/
