@@ -22,7 +22,7 @@ title: Mohammad Dehghanmanshadi
 email: m.dehghan9975@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Musings of a Deep learning researcher
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/page" # the subpath of your site, e.g. /blog
 url: "https://mohammaddehghan.github.io" # the base hostname & protocol for your site
 
 # twitter_username: jekyllrb
