@@ -8,7 +8,7 @@ tags: [LLM, Reinforcement Learning, DeepSeek, GRPO]
 
 # DeepSeek-R1 → GRPO: Integrating Reinforcement Learning in LLMs
 
-In the ever-evolving landscape of Large Language Models (LLMs), one of the most intriguing challenges is enabling these models to go beyond their training data. DeepSeek-R1 introduces an innovative approach called Generative Reinforcement Policy Optimization (GRPO) that integrates reinforcement learning to achieve this goal.
+In the ever-evolving landscape of Large Language Models (LLMs), one of the most intriguing challenges is enabling these models to go beyond their training data. DeepSeek-R1 introduces an innovative approach called Group Relative Policy Optimization (GRPO) that integrates reinforcement learning to achieve this goal.
 
 ## The Challenge
 
