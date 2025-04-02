@@ -58,11 +58,11 @@ exclude:
 # Add this to ensure proper GitHub Pages deployment
 permalink: /:year/:month/:day/:title/
 
-# Add these settings to handle posts in subdirectories
+# Collections configuration
 collections:
   posts:
     output: true
-    permalink: /:collection/:year/:month/:day/:title/
+    permalink: /:year/:month/:day/:title/
     relative_directory: _posts
     directory: _posts
     future: true
