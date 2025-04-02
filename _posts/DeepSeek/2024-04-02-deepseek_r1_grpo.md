@@ -21,12 +21,14 @@ The key to this approach lies in carefully designed rewards that guide the model
 1. **Problem-Solving Capability**
    - Measures the similarity between the model's answer and the ground truth
    - Ensures the model's responses are accurate and relevant
+   - Allows for flexible solution discovery within defined boundaries
 
 2. **Format Compliance**
    - Evaluates whether the model's answer follows the expected format
    - Maintains consistency in the thinking process
+   - Ensures structured and interpretable outputs
 
-This reward structure allows LLMs to discover solutions in their own way while staying within defined boundaries.
+This reward structure allows LLMs to discover solutions in their own way while staying within defined boundaries, promoting both creativity and reliability.
 
 ## Training Challenges
 
@@ -35,18 +37,43 @@ However, implementing this approach isn't without its challenges. When we look a
 - The overall loss can become extremely large
 - This leads to exploding gradients
 - Results in unstable training
+- Can cause the model to deviate significantly from its original capabilities
 
 ## The Solution: GRPO
 
 To address these challenges, DeepSeek-R1 introduces GRPO, which implements a clever mechanism to prevent the model from deviating too far from its original state. The approach considers different states of the model:
 
 1. **π_ref**: The model at the beginning of each epoch
-2. **π_old**: The model at the beginning of each iteration
+   - Serves as a stable reference point
+   - Helps maintain core capabilities
+   - Prevents catastrophic forgetting
 
-The key innovation is in designing the loss function to maintain stability by preventing excessive deviation after each iteration. This ensures that while the model can learn and adapt, it doesn't lose its core capabilities or diverge too far from its original training.
+2. **π_old**: The model at the beginning of each iteration
+   - Provides local stability
+   - Enables incremental learning
+   - Balances exploration and exploitation
+
+## Loss Function Design
+
+The key innovation is in designing the loss function to maintain stability while allowing for meaningful updates:
+
+1. **Deviation Control**
+   - Prevents excessive deviation from π_ref
+   - Maintains model stability across epochs
+   - Preserves core capabilities
+
+2. **Iteration Stability**
+   - Controls changes relative to π_old
+   - Enables gradual learning
+   - Prevents sudden performance drops
+
+3. **Balanced Optimization**
+   - Combines reward maximization with stability constraints
+   - Ensures sustainable learning progress
+   - Maintains model reliability
 
 ## Conclusion
 
 DeepSeek-R1's GRPO approach represents a significant step forward in LLM training methodology. By carefully balancing exploration through reinforcement learning with stability constraints, it opens new possibilities for LLMs to extend beyond their training data while maintaining reliable performance.
 
-The success of this approach could have far-reaching implications for the future of LLM development and their applications in solving increasingly complex problems. 
+The success of this approach could have far-reaching implications for the future of LLM development and their applications in solving increasingly complex problems. The careful balance between exploration and stability in GRPO provides a robust framework for training more capable and reliable language models. 
