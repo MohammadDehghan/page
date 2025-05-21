@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DeepSeek-R1 → GRPO: Integrating Reinforcement Learning in LLMs"
-date: 2024-04-02
+date: 2025-04-02
 categories: [DeepSeek, Transformers]
 tags: [LLM, Reinforcement Learning, DeepSeek, GRPO]
 ---
