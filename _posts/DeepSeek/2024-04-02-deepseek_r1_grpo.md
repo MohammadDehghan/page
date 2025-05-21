@@ -2,9 +2,13 @@
 layout: post
 title: "DeepSeek-R1 → GRPO: Integrating Reinforcement Learning in LLMs"
 date: 2025-04-02
-categories: [DeepSeek, Transformers]
+categories: [DeepSeek]
 tags: [LLM, Reinforcement Learning, DeepSeek, GRPO]
+permalink: /:categories/:title
+author: 'Mohammad Dehghanmanshadi'
 ---
+* Do not remove this line (it will not be displayed) 
+{:toc}
 
 # DeepSeek-R1 → GRPO: Integrating Reinforcement Learning in LLMs
 
@@ -53,6 +57,7 @@ To address these challenges, DeepSeek-R1 introduces GRPO, which implements a cle
    - Enables incremental learning
    - Balances exploration and exploitation
 
+![Picture]({{site.baseurl}}/assets/posts/SimCLR_arch.png){: style="display: block; margin: 0 auto;" }Fig.1 - SimCLR framework.
 ## Loss Function Design
 
 The key innovation is in designing the loss function to maintain stability while allowing for meaningful updates:

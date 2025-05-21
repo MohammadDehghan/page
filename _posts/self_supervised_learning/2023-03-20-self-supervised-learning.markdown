@@ -4,7 +4,7 @@ title:  "Self-supervised Learning: What is? and A case study (SimCLR)"
 date:   2023-03-19 2:32:36 +098
 categories: self_supervised_learning
 permalink: /:categories/:title
-author: 'Mohammad Dehghan'
+author: 'Mohammad Dehghanmanshadi'
 ---
 * Do not remove this line (it will not be displayed) 
 {:toc}

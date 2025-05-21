@@ -4,7 +4,7 @@ title:  "Vision transformer (VIT)"
 date:   2021-05-11 12:10:41 +0430
 categories: Transformers
 permalink: /:categories/:title
-author: 'Mohammad Dehghan'
+author: 'Mohammad Dehghanmanshadi'
 ---
 
 * Do not remove this line (it will not be displayed) 

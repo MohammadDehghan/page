@@ -4,7 +4,7 @@ title:  "PyTorch: When to use Module, Sequential, ModuleList, and ModuleDict"
 date:   2020-04-11 11:00:36 +0430
 categories: PyTorch
 permalink: /:categories/:title
-author: 'Mohammad Dehghan'
+author: 'Mohammad Dehghanmanshadi'
 ---
 * Do not remove this line (it will not be displayed) 
 {:toc}
