@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: ''
 permalink: /about/
@@ -45,10 +45,10 @@ I’m open to research collaborations! If you're interested in machine learning,
 
 **Email:** [m.dehghan9975@gmail.com](mailto:m.dehghan9975@gmail.com)
 
----
+--- -->
 
 
 
 
 
-<!-- Please visit my website [here](https://sites.google.com/view/mohammad-dehghan/about). -->
+Please visit my website [here](https://sites.google.com/view/mohammad-dehghan/about).
